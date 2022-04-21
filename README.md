@@ -15,6 +15,7 @@ conda install -c bioconda fastani
 
 ```
 fastani --ql <text-file-containing-paths-to-isolates> --rl <text-file-containing-paths-to-isolates> -o <output_file.out>
+./fastani -i input_directory
 ```
 
 This will generate an output_file.out file that contains a tab separated ANI result of a pairwise comparison of all the isolates provided in the input text file. 
