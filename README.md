@@ -18,3 +18,17 @@ fastani --ql <text-file-containing-paths-to-isolates> --rl <text-file-containing
 ```
 
 This will generate an output_file.out file that contains a tab separated ANI result of a pairwise comparison of all the isolates provided in the input text file. 
+
+## AMRFinder Wrapper
+
+#### Installation
+
+```
+conda install -c bioconda ncbi-amrfinderplus
+```
+
+#### Usage
+
+```
+./amr-finder-wrapper.py -i input_directory -o organism
+```
