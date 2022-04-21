@@ -2,7 +2,7 @@
 
 #Python Script Example: ./parsnp.py -c /home/aharris334/Parsnp-Linux64-v1.2/parsnp -r /home/groupb/analysis/Team2-ComparativeGenomics/GCF_003697165.2.fa  -d /home/aharris334/genomes -o /home/aharris334/parSNP_out -p 6
 
-#Commands in the shell:./parsnp.py -c /opt/anaconda3/bin -r /Users/adrianharris/Desktop/AE005174/AE005174.fna -d /Users/adrianharris/Desktop/genomes -o /Users/adrianharris/Desktop/parSNP_filter_50isolates -p 6 -x
+#Commands in the shell: parsnp -r <reference_genome> -d <genomes_dir> -o <output_dir> -p <num_of_threads> -x
 
 import argparse as ap
 import subprocess as sp
