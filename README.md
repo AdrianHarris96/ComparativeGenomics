@@ -13,6 +13,8 @@ conda install -c bioconda fastani
 
 #### Usage
 
+The input files in the --ql and --rl options is a text document containing the paths to all the isolates and both the options will be supplied with the same text document.
+
 ```
 fastani --ql <text-file-containing-paths-to-isolates> --rl <text-file-containing-paths-to-isolates> -o <output_file.out>
 ./fastani.py -i input_directory
