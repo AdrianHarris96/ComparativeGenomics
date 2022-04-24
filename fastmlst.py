@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # Author:  Kenji Nishiura
-# Descriptoin:  runs fastmlst, and then infers approximately-maximum-likelihood phylogenetic tree using GTR substitution model
+# Descriptoin:  identifies E. Coli MLST profile, and then infers approximately-maximum-likelihood phylogenetic tree using GTR substitution model
 #
 # anaconda package names of dependencies:
 # fastmlst
@@ -44,7 +44,7 @@ parser.add_argument(
 )
 args = parser.parse_args()
 
-# update database
+# update  MLST database
 updateDB = f"fastmlst --update-mlst"
 os.system(updateDB)
 
