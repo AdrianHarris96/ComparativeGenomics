@@ -18,7 +18,7 @@ parser.add_argument(
     "-f",
     "--input_fasta",
     metavar="<fasta input>",
-    help="Path to fasta files (ex:  contigs/*.fa)",
+    help="Path to genome assembly fasta files (ex:  contigs/*.fa)",
     required=True,
 )
 parser.add_argument(
