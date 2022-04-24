@@ -35,3 +35,17 @@ conda install -c bioconda ncbi-amrfinderplus
 ```
 ./amr-finder-wrapper.py -i input_directory -o organism
 ```
+
+## fastmlst.py
+#### Installation
+
+```
+conda install fastmlst mafft trimal fasttree
+```
+
+#### Usage
+
+Takes in genome assemblies as input and outputs an approximately-maximum-likelihood phylogenetic tree
+```
+fastmlst.py [-h] [-c CPUS] -f <fasta input> -o <fasta output> -t <tabular output> -z <tree output>
+```
