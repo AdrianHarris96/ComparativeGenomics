@@ -29,7 +29,7 @@ parser.add_argument(
 parser.add_argument(
     "-o",
     "--output",
-    metavar="<joined tabular output>",
+    metavar="<joined csv output>",
     help="Filename for joined comma-separated output",
     required=True,
 )
