@@ -49,3 +49,16 @@ Takes in genome assemblies as input, identifies E. Coli 7-site MLST profile, and
 ```
 fastmlst.py [-h] [-c CPUS] -f <fasta input> -o <fasta output> -t <tabular output> -z <tree output>
 ```
+
+## fastmlst_linelist_matrix.py
+#### Dependencies
+```
+pandas
+```
+
+#### Usage
+
+Takes Sample ID and Strain Type in fastmlst tabular output and joins with the metadata linelist based on corresponding Sample ID, and adding columns of a count matrix based on presence/absence of each food.
+```
+fastmlst_linelist_matrix.py [-h] -l <linelist> -m <fastmlst tabular output> -o <joined csv output>
+```
