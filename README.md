@@ -45,7 +45,7 @@ conda install fastmlst mafft trimal fasttree
 
 #### Usage
 
-Takes in genome assemblies as input and outputs an approximately-maximum-likelihood phylogenetic tree
+Takes in genome assemblies as input, identifies E. Coli 7-site MLST profile, and outputs an approximately-maximum-likelihood phylogenetic tree
 ```
 fastmlst.py [-h] [-c CPUS] -f <fasta input> -o <fasta output> -t <tabular output> -z <tree output>
 ```
