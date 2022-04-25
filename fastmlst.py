@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # Author:  Kenji Nishiura
-# Descriptoin:  identifies E. Coli MLST profile, and then infers approximately-maximum-likelihood phylogenetic tree using GTR substitution model
+# Description:  identifies E. Coli MLST profile, and then infers approximately-maximum-likelihood phylogenetic tree using GTR substitution model
 #
 # anaconda package names of dependencies:
 # fastmlst
