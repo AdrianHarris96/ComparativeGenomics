@@ -40,7 +40,7 @@ conda install -c bioconda ncbi-amrfinderplus
 #### Installation
 
 ```
-conda install fastmlst mafft trimal fasttree
+conda install fastmlst mafft trimal fasttree pandas dataframe_image
 ```
 
 #### Usage
