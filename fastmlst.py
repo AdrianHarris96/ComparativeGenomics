@@ -8,9 +8,13 @@
 # mafft
 # trimal
 # FastTree
+# pandas
+# dataframe_image
 
 import argparse
 import os
+import pandas as pd
+import dataframe_image as dfi
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-c", "--cpus", help="number of threads", type=int, default=4)
@@ -51,6 +55,10 @@ os.system(updateDB)
 # run fastmlst
 mlst = f"fastmlst -t {args.cpus} -v 2 -sch ecoli#1 -fo {args.output_fasta} -to {args.output_tab} -n novel.fasta {args.files}"
 os.system(mlst)
+
+# load fastmlst tabular output, store in dataframe, save as image
+df=pd.read_csv(f"{args.output_tab}",header=0,index_col=0)
+dfi.export(df,f"{args.output_tab}.png",table_conversion = 'matplotlib')
 
 # align concatenated gene fasta file
 align = f"mafft --auto --thread {args.cpus} {args.output_fasta} > tmp.aln"
