@@ -62,3 +62,19 @@ Takes Sample ID and Strain Type in fastmlst tabular output and joins with the me
 ```
 fastmlst_linelist_matrix.py [-h] -l <linelist> -m <fastmlst tabular output> -o <joined csv output>
 ```
+
+## fastani_vis.py
+#### Dependencies
+```
+pandas
+scipy
+biopython
+matplotlib
+```
+
+#### Usage
+
+Takes the tabular output from fastANI and generates a UPGMA tree .nwk and .png file. 
+```
+fastani_vis.py [-h] -i <input fastani matrix> -o <output prefix>
+```
