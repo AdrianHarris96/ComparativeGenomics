@@ -104,7 +104,7 @@ KSNP is a command-line-tool that identifies SNPs based on k-mer analysis. Accord
 
 #### Dependencies
 ```
-tcsh - tsch can be acquired through two methods:
+tcsh - tcsh can be acquired through two methods:
 (1) sudo apt-get install tcsh
 (2) conda install -c conda-forge tcsh
 ```
