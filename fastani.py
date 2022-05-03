@@ -19,4 +19,4 @@ for i in range(len(dirs)):
 	else:
 		continue
 
-os.system(f"fastani --ql files.txt --rl files.txt -o output.out")
+os.system(f"fastani --ql files.txt --rl files.txt --matrix -o output.out")
