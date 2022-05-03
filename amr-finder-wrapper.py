@@ -9,12 +9,18 @@ import os
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-i', '--input_dir', metavar = '<directory>', 
-    help = "Path to directory contianing contigs")
+    help = "Path to directory containing contigs",required=True)
 parser.add_argument('-o', '--organism', metavar = '<AMRFinder Organism ID>', default = 'Escherichia',
     help = "Organism identifier to be used in AMRFinder: Default = Escherichia")
 args = parser.parse_args()
 
-run_amr_finder = f'ls {args.input} | xargs -I sample amrfinder -n {args.input}/contigs.fa --organism {args.organism} --output sample'
+# download database from NCBI
+create_amr_db= f'amrfinder --force_update'
+os.system(create_amr_db)
+
+# Loops through each file in input directory, runs AMRFinder on each 
+# Output goes in current directory, name is the same as input filename with .out suffix
+run_amr_finder=f'for assembly in {args.input_dir}/*; do amrfinder -n "$assembly" --organism {args.organism} --output "$(basename $assembly)".out; done'
 os.system(run_amr_finder)
 
 # uncomment this block if tabular output as image is desired
