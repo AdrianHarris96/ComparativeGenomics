@@ -156,3 +156,15 @@ This same pattern was also observed with a high identity cluster based on fastAN
 
 Again, this pattern was further confirmed with a maximum-likelihood tree based on kSNP analysis.
 ![ksnp_ml](Images/ksnp_tree.png)
+
+We found a homogenous antimicrobial resistance profile by analyzing with AMRfinder, with no evidence suggesting resistance to:
+Penicillin
+Fluroquinolones
+Cephalosporins
+Macrolides
+Lincosamides
+
+Therefore we would recommend health authorities to follow up and investigate the food supply chain for Apples, Spinach, and Lettuce in Indiana, Kansas, Minnesota, and South Dakota to narrow down the source of this outbreak cluster.
+
+![amr](Images/anti_res.png)
+
