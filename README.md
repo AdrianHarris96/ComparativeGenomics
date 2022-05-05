@@ -137,3 +137,13 @@ kSNP3 -in in_list -outdir <output_dir> -k <kmer> -CPU <cores> -NJ -ML
 
 ```
 Output consists of multiple .parsimony (default), .NJ (optional), and .ML (optional) trees. 
+
+# Results
+
+##FastMLST
+
+![Map](Images/Map.png)
+
+![epi_all](Images/epicurve_all.png)
+
+![epi_foods](Images/epicurve_foods.png)
