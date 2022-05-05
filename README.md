@@ -140,10 +140,19 @@ Output consists of multiple .parsimony (default), .NJ (optional), and .ML (optio
 
 # Results
 
-##FastMLST
+## FastMLST
 
+Cases associated with our cultured isolates were concentrated in the Midwest.
 ![Map](Images/Map.png)
 
+An epidemic curve of all isolates shows a peak in incidence centered at Week 43 in Indiana, Minnesota, and South Dakota.
 ![epi_all](Images/epicurve_all.png)
 
+Apples, Spinach, and Lettuce are the only foods for which fastMLST identified ST11 (Shiga toxin-producing E. coli) cases within a 60 day window.
 ![epi_foods](Images/epicurve_foods.png)
+
+This same pattern was also observed with a high identity cluster based on fastANI analysis.
+![epi_foods_ani](Images/epicurve_foods_ANI.png)
+
+Again, this pattern was further confirmed with a maximum-likelihood tree based on kSNP analysis.
+![ksnp_ml](Images/ksnp_tree.png)
